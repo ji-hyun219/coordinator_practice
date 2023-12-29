@@ -25,12 +25,12 @@ class AppCoordinator: BaseCoordinator{ // <-- extends
 
 // 이 프로토콜들은 코디네이터간의 통신을 위한 인터페이스를 정의!
 
-protocol NewsToAppCoordinatorDelegate: class {
+protocol NewsToAppCoordinatorDelegate: AnyObject {
     // 뉴스 뷰에서 Flutter 뷰로 네비게이션
     func navigateToFlutterViewController()
 }
 
-protocol FlutterToAppCoordinatorDelegate: class {
+protocol FlutterToAppCoordinatorDelegate: AnyObject {
     // Flutter 뷰에서 뉴스 뷰로 네비게이션
     func navigateToNewsViewController()
 }
