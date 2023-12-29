@@ -18,7 +18,7 @@ class AppCoordinator: BaseCoordinator{ // <-- extends
     
     override func start() { // override!
         super.start()
-        navigateToNewsViewController() // navigate NewsViewController
+        navigateToNewsViewController() // navigate NewsViewController (AppDelegate 에서 호출됨)
     }
     
 }
