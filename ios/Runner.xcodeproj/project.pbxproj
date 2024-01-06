@@ -16,6 +16,8 @@
 		43593BEA2B3EA6CA005B136B /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43593BE92B3EA6CA005B136B /* News.storyboard */; };
 		43593BEC2B3EA70E005B136B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43593BEB2B3EA70E005B136B /* NewsViewController.swift */; };
 		43593BEE2B3EA814005B136B /* NewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43593BED2B3EA814005B136B /* NewsCoordinator.swift */; };
+		4360950C2B4932DF0067A994 /* Pincrux.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4360950B2B4932DF0067A994 /* Pincrux.storyboard */; };
+		4360950E2B4933010067A994 /* PincruxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4360950D2B4933010067A994 /* PincruxViewController.swift */; };
 		5BB4B31D153076DCA7401512 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8CF4A7F7BFBA3C0A423A06 /* Pods_Runner.framework */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
@@ -58,6 +60,8 @@
 		43593BE92B3EA6CA005B136B /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		43593BEB2B3EA70E005B136B /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		43593BED2B3EA814005B136B /* NewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCoordinator.swift; sourceTree = "<group>"; };
+		4360950B2B4932DF0067A994 /* Pincrux.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pincrux.storyboard; sourceTree = "<group>"; };
+		4360950D2B4933010067A994 /* PincruxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PincruxViewController.swift; sourceTree = "<group>"; };
 		6467562796AC9554CA4C8555 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,15 @@
 			path = News;
 			sourceTree = "<group>";
 		};
+		4360950A2B4932C30067A994 /* Pincrux */ = {
+			isa = PBXGroup;
+			children = (
+				4360950B2B4932DF0067A994 /* Pincrux.storyboard */,
+				4360950D2B4933010067A994 /* PincruxViewController.swift */,
+			);
+			path = Pincrux;
+			sourceTree = "<group>";
+		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +179,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				4360950A2B4932C30067A994 /* Pincrux */,
 				43593BBB2B3B4D57005B136B /* Components */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
@@ -292,6 +306,7 @@
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				43593BEA2B3EA6CA005B136B /* News.storyboard in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
+				4360950C2B4932DF0067A994 /* Pincrux.storyboard in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +388,7 @@
 				43593BC12B3B4E36005B136B /* AppCoordinator.swift in Sources */,
 				43593BEC2B3EA70E005B136B /* NewsViewController.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				4360950E2B4933010067A994 /* PincruxViewController.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
@@ -573,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -622,7 +638,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
