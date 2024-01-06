@@ -18,6 +18,10 @@
 		43593BEE2B3EA814005B136B /* NewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43593BED2B3EA814005B136B /* NewsCoordinator.swift */; };
 		4360950C2B4932DF0067A994 /* Pincrux.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4360950B2B4932DF0067A994 /* Pincrux.storyboard */; };
 		4360950E2B4933010067A994 /* PincruxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4360950D2B4933010067A994 /* PincruxViewController.swift */; };
+		436095152B4953890067A994 /* PincruxOfferwall.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436095132B4953850067A994 /* PincruxOfferwall.xcframework */; };
+		436095162B4953890067A994 /* PincruxOfferwall.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 436095132B4953850067A994 /* PincruxOfferwall.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		436095182B49664B0067A994 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436095172B49664B0067A994 /* AdSupport.framework */; };
+		4360951A2B4966600067A994 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436095192B4966600067A994 /* AppTrackingTransparency.framework */; };
 		5BB4B31D153076DCA7401512 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8CF4A7F7BFBA3C0A423A06 /* Pods_Runner.framework */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
@@ -42,6 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				436095162B4953890067A994 /* PincruxOfferwall.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +67,9 @@
 		43593BED2B3EA814005B136B /* NewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCoordinator.swift; sourceTree = "<group>"; };
 		4360950B2B4932DF0067A994 /* Pincrux.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pincrux.storyboard; sourceTree = "<group>"; };
 		4360950D2B4933010067A994 /* PincruxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PincruxViewController.swift; sourceTree = "<group>"; };
+		436095132B4953850067A994 /* PincruxOfferwall.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PincruxOfferwall.xcframework; path = ../../Downloads/PincruxOfferwall.xcframework; sourceTree = "<group>"; };
+		436095172B49664B0067A994 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		436095192B4966600067A994 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		6467562796AC9554CA4C8555 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +91,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436095152B4953890067A994 /* PincruxOfferwall.xcframework in Frameworks */,
+				4360951A2B4966600067A994 /* AppTrackingTransparency.framework in Frameworks */,
 				5BB4B31D153076DCA7401512 /* Pods_Runner.framework in Frameworks */,
+				436095182B49664B0067A994 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +207,9 @@
 		BC61F409B609A392C247CB01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				436095192B4966600067A994 /* AppTrackingTransparency.framework */,
+				436095172B49664B0067A994 /* AdSupport.framework */,
+				436095132B4953850067A994 /* PincruxOfferwall.xcframework */,
 				9C8CF4A7F7BFBA3C0A423A06 /* Pods_Runner.framework */,
 			);
 			name = Frameworks;

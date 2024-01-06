@@ -17,13 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSg-36-PYT">
-                                <rect key="frame" x="131" y="111" width="131" height="35"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCP-dE-o7R">
+                                <rect key="frame" x="0.0" y="109" width="393" height="693"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDk-Ps-o6c">
+                                <rect key="frame" x="16" y="59" width="77" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Go To Flutter.."/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt; Back"/>
                                 <connections>
-                                    <action selector="goToFlutter:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zAu-HA-Mgh"/>
+                                    <action selector="goBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nxu-pt-n1Z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -31,12 +36,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="button" destination="gSg-36-PYT" id="Squ-jJ-Cv0"/>
+                        <outlet property="customView" destination="RCP-dE-o7R" id="M7T-Ff-Zrl"/>
+                        <outlet property="goBackBtn" destination="cDk-Ps-o6c" id="Jzw-7j-ayj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58" y="-2"/>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
